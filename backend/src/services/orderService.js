@@ -90,7 +90,7 @@ export async function processAllOrders() {
 
     return {
       ...baseInfo,
-      status: isDelayed ? 'Delayed' : 'Shipped',
+      status: isDelayed ? 'Delayed' : 'Pending',
       message: generateProfessionalMessage(order.customer, order.city, condition, isDelayed)
     };
   });

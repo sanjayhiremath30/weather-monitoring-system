@@ -28,7 +28,7 @@ const OrderProcessing = ({ results, setResults, loading, setLoading }) => {
 
   const getStatusIcon = (status) => {
     switch (status) {
-      case 'Shipped': return <CheckCircle className="status-icon shipped" />;
+      case 'Pending': return <CheckCircle className="status-icon pending" />;
       case 'Delayed': return <Clock className="status-icon delayed" />;
       case 'Error': return <AlertTriangle className="status-icon error" />;
       default: return <RefreshCw className="status-icon pending spin" />;

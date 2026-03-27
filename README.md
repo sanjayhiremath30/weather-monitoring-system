@@ -4,6 +4,16 @@ A sophisticated logistics management platform that autonomously adjusts order st
 
 ---
 
+## 📸 Screenshots
+
+### Dashboard
+![Dashboard](./assets/dashboard.png)
+
+### Order Processing
+![Orders](./assets/orders.png)
+
+---
+
 ## 🌟 Core Features
 
 ### 📡 High-Performance Data Orchestration
@@ -11,7 +21,7 @@ A sophisticated logistics management platform that autonomously adjusts order st
 - **Batched API Integration**: Optimized to handle global cities, minimizing redundant API requests by processing unique destinations first.
 
 ### 🧠 Intelligent Decision Engine
-- **Strategy Selection**: Automatically classifies shipments as `Shipped` or `Delayed` based on critical weather conditions (Rain, Snow, Extreme, etc.).
+- **Strategy Selection**: Automatically classifies shipments as `Pending` or `Delayed` based on critical weather conditions (Rain, Snow, Extreme, etc.).
 - **Smart Notification Generation**: Dynamically crafts professional, varied AI-suggested messages for customers, avoiding repetitive responses and improving the user experience.
 
 ### 🍱 Robust Enterprise Backend
@@ -64,6 +74,13 @@ npm install
 npm run dev
 ```
 
+### Run Backend Only (Assignment Requirement)
+```bash
+cd backend
+npm install
+node server.js
+```
+
 ---
 
 ## 🏗️ System Architecture
@@ -74,6 +91,19 @@ npm run dev
 4.  **Transformation**: `OrderService` maps weather data to orders, generates smart messages, and adds audit timestamps.
 5.  **Persistence**: Updated results are saved to `updated_orders.json`.
 6.  **Response**: Frontend receives structured JSON payload and updates the dashboard with fresh logistics data.
+
+---
+
+## 📄 Sample Output
+
+```json
+{
+  "order_id": "1001",
+  "status": "Delayed",
+  "weather": "Rain",
+  "processed_at": "2026-03-27T10:30:00Z"
+}
+```
 
 ---
 
@@ -91,6 +121,17 @@ npm run dev
 - **WebHooks**: Automatically notify customers via email/SMS when weather causes a delay.
 - **Global Map Visualization**: Integrate Leaflet.js to pinpoint delayed shipments on a live global map.
 - **Admin Authentication**: Secure the processing endpoint with JWT-based auth.
+
+---
+
+## 🤖 AI Usage
+
+Prompts used for:
+- Parallel fetching
+- Error handling
+- Message generation
+
+See `AI_LOG.md` for details.
 
 ---
 
