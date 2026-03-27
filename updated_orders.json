@@ -1,0 +1,47 @@
+[
+  {
+    "order_id": "1001",
+    "customer": "Alice Smith",
+    "city": "New York",
+    "status": "Error",
+    "processed_at": "2026-03-27T05:49:30.297Z",
+    "weather": null,
+    "message": "Unable to confirm shipment due to city identification error: Invalid API key. Please see https://openweathermap.org/faq#error401 for more info."
+  },
+  {
+    "order_id": "1002",
+    "customer": "Bob Jones",
+    "city": "Mumbai",
+    "status": "Error",
+    "processed_at": "2026-03-27T05:49:30.300Z",
+    "weather": null,
+    "message": "Unable to confirm shipment due to city identification error: Invalid API key. Please see https://openweathermap.org/faq#error401 for more info."
+  },
+  {
+    "order_id": "1003",
+    "customer": "Charlie Green",
+    "city": "London",
+    "status": "Error",
+    "processed_at": "2026-03-27T05:49:30.300Z",
+    "weather": null,
+    "message": "Unable to confirm shipment due to city identification error: Invalid API key. Please see https://openweathermap.org/faq#error401 for more info."
+  },
+  {
+    "order_id": "1004",
+    "customer": "David Brown",
+    "city": "InvalidCity123",
+    "status": "Error",
+    "processed_at": "2026-03-27T05:49:30.300Z",
+    "weather": null,
+    "message": "Unable to confirm shipment due to city identification error: Invalid API key. Please see https://openweathermap.org/faq#error401 for more info."
+  },
+  {
+    "order_id": "1005",
+    "customer": "Eva Wilson",
+    "city": "Tokyo",
+    "status": "Error",
+    "processed_at": "2026-03-27T05:49:30.300Z",
+    "weather": null,
+    "message": "Unable to confirm shipment due to city identification error: Invalid API key. Please see https://openweathermap.org/faq#error401 for more info."
+  }
+]

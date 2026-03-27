@@ -1,0 +1,57 @@
+.ai-suggestions {
+    margin-top: 2rem;
+}
+
+.suggestions-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.suggestions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.suggestion-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.suggestion-card:hover {
+    transform: translateY(-5px) scale(1.02);
+}
+
+.suggestion-icon {
+    padding: 1rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.suggestion-content {
+    flex: 1;
+}
+
+.suggestion-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.suggestion-content p {
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .suggestions-grid {
+        grid-template-columns: 1fr;
+    }
+}

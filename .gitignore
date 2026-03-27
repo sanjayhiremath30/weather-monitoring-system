@@ -1,0 +1,40 @@
+# Professional Git Ignore
+
+# Keys & Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Dependency folders
+node_modules/
+jspm_packages/
+backend/node_modules/
+frontend/node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+.vite
+frontend/dist/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo

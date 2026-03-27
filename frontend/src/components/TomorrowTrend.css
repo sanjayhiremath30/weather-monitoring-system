@@ -1,0 +1,137 @@
+.tomorrow-trend {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.tomorrow-trend h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #fff;
+}
+
+.trend-content {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.trend-indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    min-width: 150px;
+}
+
+.trend-label {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.trend-change {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.tomorrow-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.tomorrow-card {
+    text-align: center;
+}
+
+.tomorrow-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.tomorrow-card h3 {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.tomorrow-temps {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.temp-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.temp-label {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.temp-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.temp-value.high {
+    color: #ff6b6b;
+}
+
+.temp-value.low {
+    color: #4ecdc4;
+}
+
+.temp-value.avg {
+    color: #95e1d3;
+}
+
+.tomorrow-extra {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.extra-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.extra-item span:first-child {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.extra-item span:last-child {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .trend-content {
+        flex-direction: column;
+    }
+
+    .tomorrow-temps {
+        flex-direction: column;
+    }
+
+    .tomorrow-extra {
+        flex-direction: column;
+    }
+}

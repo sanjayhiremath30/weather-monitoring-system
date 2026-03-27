@@ -1,0 +1,80 @@
+.weather-chart {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.chart-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.chart-card {
+    padding: 2rem;
+}
+
+.chart-card h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+/* Custom Tooltip */
+.custom-tooltip {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.tooltip-label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.custom-tooltip p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+}
+
+/* Statistics */
+.stats-card h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+}
+
+.stat-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-bottom: 0.5rem;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffeb3b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .chart-card {
+        padding: 1.5rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "weather-order-system-root",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "process": "node app.js"
+  }
+}

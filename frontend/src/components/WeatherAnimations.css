@@ -1,0 +1,84 @@
+.weather-animations {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+/* Rain Animation */
+.rain-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.raindrop {
+    position: absolute;
+    top: -10px;
+    width: 2px;
+    height: 50px;
+    background: linear-gradient(to bottom, rgba(174, 194, 224, 0), rgba(174, 194, 224, 0.8));
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+/* Clouds Animation */
+.clouds-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.cloud {
+    position: absolute;
+    font-size: 80px;
+    opacity: 0.6;
+    animation: float linear infinite;
+}
+
+@keyframes float {
+    from {
+        transform: translateX(-100px);
+    }
+
+    to {
+        transform: translateX(calc(100vw + 100px));
+    }
+}
+
+/* Lightning Animation */
+.lightning-flash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    animation: flash 0.2s;
+    z-index: 10;
+}
+
+@keyframes flash {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
